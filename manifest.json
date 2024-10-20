@@ -1,0 +1,30 @@
+{
+    "name": "Image Downloader",
+    "version": "0.0.1",
+    "description": "Downloads images from certain sites",
+    "manifest_version": 3,
+    "author": "Muso Khon",
+    "action":
+    {
+        "default_popup": "index.html",
+        "default_title": "ImageDownloader"
+    },
+    "permissions":
+    [
+        "storage",
+        "activeTab",
+        "scripting",
+        "downloads",
+        "cookies",
+        "tabs"
+    ],
+    "host_permissions":
+    [
+        "https://*.encar.com/*",
+        "https://*.heydealer.com/*"
+    ],
+    "background":
+    {
+        "service_worker": "background.js"
+    }
+}
